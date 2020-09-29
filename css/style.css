@@ -42,11 +42,9 @@ a {
   -o-transition: .3s all;
   transition: .3s all;
   color: #bac964; }
-  a:focus, a:active {
+  a:hover, a:focus, a:active {
     color: #b2c251;
     text-decoration: none; }
-  a:hover {
-    color: #fafafa; }
 .parent-nav-link-padding, .site-navbar .navbar-nav > li > a {
   padding: 15px 20px !important; }
 
