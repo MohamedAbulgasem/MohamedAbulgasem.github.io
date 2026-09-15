@@ -3,11 +3,19 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Mohamed Abulgasem · Senior Mobile Engineer</title>
-  <meta name="description" content="Mohamed Abulgasem, Senior Mobile Engineer in Cape Town. Mobile apps for fintech, crypto and 5G connectivity, and the maker of Taqwa.">
-  <meta property="og:title" content="Mohamed Abulgasem · Senior Mobile Engineer">
-  <meta property="og:description" content="Mobile apps for fintech, crypto and 5G connectivity, and the maker of Taqwa.">
-  <meta property="og:image" content="https://mohamedabulgasem.github.io/images/mohamed_about.jpg">
+  <title>Mohamed Abulgasem</title>
+  <meta name="description" content="Mohamed Abulgasem, a mobile engineer in Cape Town leading mobile development at LoopDL, and the maker of Taqwa.">
+  <meta name="theme-color" content="#f7f7f4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0f1113" media="(prefers-color-scheme: dark)">
+  <meta property="og:title" content="Mohamed Abulgasem">
+  <meta property="og:description" content="A mobile engineer in Cape Town leading mobile development at LoopDL, and the maker of Taqwa.">
+  <meta property="og:image" content="https://mohamedabulgasem.github.io/images/mohamed.jpg">
+  <meta property="og:url" content="https://mohamedabulgasem.github.io/">
+  <meta property="og:type" content="profile">
+  <link rel="canonical" href="https://mohamedabulgasem.github.io/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap">
@@ -21,6 +29,7 @@
       --ink-3: #8a9099;
       --accent: #1d5c73;
       --accent-ink: #ffffff;
+      --chip: #eef0ec;
       color-scheme: light;
     }
     @media (prefers-color-scheme: dark) {
@@ -33,6 +42,7 @@
         --ink-3: #6d737c;
         --accent: #6fb3cc;
         --accent-ink: #0f1113;
+        --chip: #1d2125;
         color-scheme: dark;
       }
     }
@@ -64,12 +74,12 @@
     .nav a { color: var(--ink-2); }
 
     /* Intro */
-    .intro { display: grid; grid-template-columns: 168px 1fr; gap: 36px; align-items: center; padding-block: 40px 56px; }
-    .portrait { width: 168px; height: 168px; border-radius: 24px; object-fit: cover; border: 1px solid var(--hair); background: var(--surface); }
+    .intro { display: grid; grid-template-columns: 168px 1fr; gap: 36px; align-items: start; padding-block: 40px 48px; }
+    .portrait { width: 168px; height: 168px; border-radius: 24px; object-fit: cover; border: 1px solid var(--hair); background: var(--surface); margin-top: 8px; }
     .role { margin-top: 10px; font-size: 18px; color: var(--ink-2); }
     .role b { color: var(--ink); font-weight: 600; }
-    .lead { margin-top: 20px; font-size: 19px; line-height: 1.5; }
-    .about { margin-top: 14px; color: var(--ink-2); max-width: 62ch; }
+    .about { margin-top: 18px; font-size: 18px; line-height: 1.55; max-width: 60ch; }
+    .about + .about { margin-top: 12px; color: var(--ink-2); font-size: 17px; }
     .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
     .btn {
       display: inline-flex; align-items: center; gap: 8px; min-height: 42px; padding: 0 18px; border-radius: 999px;
@@ -78,6 +88,11 @@
     .btn.primary { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
     .btn:hover { text-decoration: none; filter: brightness(0.97); }
     .btn svg { width: 16px; height: 16px; }
+
+    /* Toolkit */
+    .toolkit { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; margin-top: 26px; }
+    .toolkit .label { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); margin-right: 4px; }
+    .chip { font-size: 14px; font-weight: 500; color: var(--ink-2); background: var(--chip); border: 1px solid var(--hair); border-radius: 999px; padding: 4px 12px; white-space: nowrap; }
 
     /* Sections */
     .section { padding-block: 44px; border-top: 1px solid var(--hair); }
@@ -98,7 +113,7 @@
     .project .links { margin-top: 8px; font-size: 15px; font-weight: 500; display: flex; gap: 16px; flex-wrap: wrap; }
 
     /* Contact */
-    .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 18px; }
+    .contact { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 18px; }
     .contact div { background: var(--surface); border: 1px solid var(--hair); border-radius: 16px; padding: 16px 18px; }
     .contact span { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--ink-3); margin-bottom: 6px; }
 
@@ -107,8 +122,8 @@
     .foot a { color: var(--ink-2); }
 
     @media (max-width: 640px) {
-      .intro { grid-template-columns: 1fr; gap: 24px; padding-block: 24px 44px; }
-      .portrait { width: 132px; height: 132px; }
+      .intro { grid-template-columns: 1fr; gap: 24px; padding-block: 24px 40px; }
+      .portrait { width: 132px; height: 132px; margin-top: 0; }
       .item { grid-template-columns: 1fr; gap: 6px; }
       .top { padding-block: 18px; }
       .nav { gap: 14px; font-size: 14px; }
@@ -129,12 +144,22 @@
 
   <main id="top">
     <section class="wrap intro">
-      <img class="portrait" src="images/mohamed_about.jpg" alt="Mohamed Abulgasem" width="168" height="168">
+      <img class="portrait" src="images/mohamed.jpg" alt="Mohamed Abulgasem" width="168" height="168">
       <div>
-        <h1>Hello, I'm Mohamed Abulgasem.</h1>
+        <h1>Hi, I'm Mohamed.</h1>
         <p class="role"><b>Senior Mobile Engineer</b> · Cape Town, South Africa</p>
-        <p class="lead">An enthusiastic software engineer, who is always eager to learn and up for a challenge.</p>
-        <p class="about">I am passionate about mobile technologies and obsessed with delivering quality. I work well in teams and value teamwork as a means of getting the job done. Time management and being well organised are very important, so I enjoy setting up structured steps to reach my goal.</p>
+        <p class="about">I build mobile apps for a living. These days I lead mobile development at LoopDL, where we make the apps for 5G routers and the network behind them.</p>
+        <p class="about">Before that I spent seven years on Android apps that people trust with their money: a neobank, a crypto exchange and a bank's forex trading platform. On the side I made Taqwa, a free prayer times and Quran app, mostly because I wanted one with no ads and no account.</p>
+        <div class="toolkit" aria-label="Toolkit">
+          <span class="label">Toolkit</span>
+          <span class="chip">Kotlin</span>
+          <span class="chip">Jetpack Compose</span>
+          <span class="chip">Kotlin Multiplatform</span>
+          <span class="chip">Android architecture</span>
+          <span class="chip">SwiftUI</span>
+          <span class="chip">Spring Boot</span>
+          <span class="chip">CI/CD</span>
+        </div>
         <div class="actions">
           <a class="btn primary" href="https://github.com/MohamedAbulgasem/" target="_blank" rel="noopener">
             <svg viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
@@ -239,7 +264,6 @@
       <h2>Get in touch</h2>
       <div class="contact">
         <div><span>Email</span><a href="mailto:algiriany93@gmail.com">algiriany93@gmail.com</a></div>
-        <div><span>Phone</span><a href="tel:+27817140814">+27 81 714 0814</a></div>
         <div><span>Location</span>Cape Town, South Africa</div>
       </div>
     </section>
